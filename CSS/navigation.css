@@ -1,0 +1,32 @@
+header {
+    width 80%
+    margin 0 auto;
+    background: #1E45F1;
+}
+
+header::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+.logo {
+    float: left;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding:0;
+    list-style:none;
+}
+
+nav li{
+    display:inline-block;
+    margin-left: 2%;
+
+}
+
