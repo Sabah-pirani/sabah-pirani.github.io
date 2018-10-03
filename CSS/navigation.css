@@ -15,6 +15,7 @@ header::after{
 
 .logo {
     float: left;
+    height:100px;
 }
 
 nav{
