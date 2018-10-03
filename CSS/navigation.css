@@ -1,6 +1,9 @@
+.container{
+    width:80%;
+    margin:0 auto;
+}
+
 header {
-    width 80%
-    margin 0 auto;
     background: #1E45F1;
 }
 
