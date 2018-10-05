@@ -1,0 +1,41 @@
+.flex {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    
+}
+
+img {
+    height: 300px; 
+
+}
+
+ul{
+    list-style:none;
+}
+
+.block{
+    font-family: "Times New Roman", Times, serif;
+}
+
+p{
+    margin:0;
+    padding:0;
+}
+
+h2{
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align:center;
+}
+
+

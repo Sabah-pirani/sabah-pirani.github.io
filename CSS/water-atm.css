@@ -1,0 +1,9 @@
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nasa {
+   max-width: 100%;
+   padding-top:3em;
+}
