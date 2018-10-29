@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/CSS/water-atm-website-styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/html5reset-1.6.1.css">
+    <link rel="stylesheet" type="text/css" href="/css/water-atm-website-styles.css">
     <title> How it Works</title>
 
 </head>
 <body>
     <header>
-        <div class="container">
         <img src="/images/logo.png" alt="logo" class="logo">
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
         <nav>
             <ul>
                 <li><a href="/index.html">Main</a></li>
@@ -21,10 +23,14 @@
                 <li><a href="/how-it-works.html">How it Works?</a></li>
                 <li><a href="/the-team.html">The Team</a></li>
                 <li><a href="#" target=_blank>Data Dashboard Login</a></li>
-             </ul>
-        </nav> 
-        </div> 
-    </header>
+            </ul>
+        </nav>  
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span>
+                <i class="fas fa-bars"></i></a></li>
+            </span>
+        </label>
+    </header>   
     
     <div id="container3">
         
@@ -34,18 +40,18 @@
             <ol> 
                 <li>An automated water-dispensing unit</li>
                     <ul>
-                        <li>Uses RFID authentication for each family</li>
-                        <li>Solenoid activated valve to start and stop dispensing of water</li>
-                        <li>Flow meter used to measure volume of water dispensed</li>
+                        <li class="inner">Uses RFID authentication for each family</li>
+                        <li class="inner">Solenoid activated valve to start and stop dispensing of water</li>
+                        <li class="inner">Flow meter used to measure volume of water dispensed</li>
                     </ul>
                 <li>A real-time remote water quality-monitoring unit</li>
                     <ul>
-                        <li>Measure turbidity, residual chlorine, total dissolved solids and pH</li>
+                        <li class="inner">Measure turbidity, residual chlorine, total dissolved solids and pH</li>
                     </ul>
                 <li>Communications protocols</li>
                     <ul>
-                        <li>Two SIM GSP components (one for backup) where the log files from the water dispensing unit and water quality unit can be pushed to a central database in real time </li>
-                        <li>A local database will be kept on the system to sore data in the case that neither GSM network is connecting </li>
+                        <li class="inner">Two SIM GSP components (one for backup) where the log files from the water dispensing unit and water quality unit can be pushed to a central database in real time </li>
+                        <li class="inner">A local database will be kept on the system to sore data in the case that neither GSM network is connecting </li>
                     </ul>
             </ol>
         </div>
@@ -57,9 +63,5 @@
     
     </div>
 
-    <footer>
-        <i class="fas fa-pencil-alt"></i>
-        <p>Designed by Sabah</p>
-    </footer>
 </body>
 </html>

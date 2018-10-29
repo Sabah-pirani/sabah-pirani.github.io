@@ -1,0 +1,278 @@
+
+
+/* -------------------------------Navigation----------------------------------------- */
+header {
+    background: rgb(7, 13, 41);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+   }
+nav{
+    position:absolute;
+    text-align: right;
+    top:100%;
+    left:0;
+    background:rgb(7, 13, 41);
+    width:100%;
+    display:none;
+    }
+nav ul{
+    margin: 0;
+    padding:0;
+    list-style:none;
+    }
+nav li{
+    margin-right: 1em;
+    padding-bottom: 1em;
+    }
+nav a{
+    color: #f2f2f2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    }
+nav a:hover {
+    color: #4372fc;
+    }
+.logo {
+    float: left;
+    height:4em;
+    }
+.nav-toggle:checked ~ nav{
+    display:block;
+    }
+.nav-toggle{
+    display:none;
+    }
+.nav-toggle-label{
+    position:absolute;
+    top:0;
+    right:0;
+    margin-right:1em;
+    color: #f2f2f2;
+    height:100%;
+    display:flex;
+    align-items:center;
+    }
+.fa-bars{
+    font-size:1.5em;
+    }
+
+/* --------------Fonts and general paragraph/headers formatting-----------------------*/
+
+div p {
+    font-family: "Times New Roman", Times, serif;
+}
+h1{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+h2{
+    text-align:center;
+    font-size:1.5em;
+    margin:0.5em;
+}
+
+/* -----------------------------------Footer--------------------------------------- */
+footer{
+
+    display:relative;
+    bottom:0px;
+    display: flex;
+}
+
+/* ----------------------------------Index-page-------------------------------------- */
+
+#container1 {
+    position:absolute;
+    left:0;
+    top:4em;
+    background-image: url(../images/gurez-by-kashif-pathan.jpg);
+    width: 100%;
+    height:100%;
+    background-size:cover;
+
+}
+.main-title{
+    Font-family: "Times New Roman", Times, serif;
+    position: relative;
+    top:40%;
+    color:rgb(231, 213, 213);
+    text-shadow: 5px 5px 5px #000;
+    text-align:center;
+    font-size: 3.5em;
+
+}
+
+/* -----------------------------------water-atm-------------------------------------- */
+
+#container2 {
+    position:relative;
+    top:4em;
+    display:grid;
+    grid-template-rows: auto auto;
+}
+#nasa {
+   display:block;
+   max-width: 80%;
+   margin-left:auto;
+   margin-right:auto;
+}
+#container2 p{
+    margin:8px;
+}
+figcaption{
+    display:block;
+    text-align:center;
+    padding-bottom:15px;
+    max-width: 75%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/* --------------------------------how-it-works-------------------------------------- */
+
+#container3 {
+    position:relative;
+    top:4em;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    padding-left:2em;
+
+}
+ol{
+    list-style-position: outside;
+
+}
+ul{
+    margin-left:1em;
+}
+h2 ~p{
+    margin-bottom:1em;
+}
+ol li{
+   margin:1em;
+   font-weight:bold;
+}
+.inner{
+    margin:.1em;
+    margin-left:1em;
+    font-weight:normal;
+}
+
+/* ---------------------------------The Team---------------------------------------- */
+
+#container4 {
+    position:relative;
+    top:4em;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.block img {
+    height: 300px; 
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top:2em;
+}
+
+.block p{
+    margin:0;
+    padding:0;
+    text-align:center;
+    border-style:solid;
+
+
+}
+
+.block h2{
+    margin:0;
+    padding:0;
+    text-align: center;
+    
+}
+
+.block{
+    list-style-type:none;
+}
+
+
+/* -------------------------------larger screens---------------------------------- */
+@media only screen and (min-width: 800px){
+    /* navigation */
+    .nav-toggle-label{
+        visibility:hidden; 
+    }
+    header{
+        display:grid;
+        grid-template-columns:1fr auto minmax(700px, 1fr) 1fr;
+    }   
+    .logo{
+        grid-column:0/1;
+    }
+    nav{
+        all:unset;
+        grid-column:2/4;
+        display:flex;
+        justify-content:flex-end;
+    }
+    nav ul{
+        display:flex;
+        justify-content:flex-end;
+        align-items:center;
+       
+    }
+    nav li{
+        margin-left:3em;
+        margin-bottom:0;
+        padding-bottom:0;
+    }
+   
+    /* Water ATM */
+
+    #container2 {
+        grid-template-columns: auto auto;
+    }
+    #nasa {
+       display:block;
+       max-width: 75%;
+       padding-top:2.25em;
+    }
+  
+    /* How it works */
+
+    #container3 {
+        grid-template-columns: auto auto;
+        
+    }
+
+
+   
+}
+
+
+/* --------------------------Largest Screens (Phones etc)------------------------------- */
+@media only screen and (min-width: 800px){
+    header{
+        display:grid;
+        grid-template-columns:repeat(6, 1fr);
+    }
+ 
+    nav{
+        all:unset;
+        grid-column:2/6;
+        display:flex;
+        justify-content:space-around;
+    }
+}
+   
+    
+
+
+
